@@ -8,7 +8,7 @@
 # TODO
 # have a HELP command
 # have a SHOW command
-# clean code in general
+# clean code up in general
 
 # make a list
 shopping_list = []
@@ -17,6 +17,8 @@ shopping_list = []
 print("What should we pick up at the store?")
 print("""
 Enter 'DONE' to stop adding items.
+Enter 'HELP' for this help.
+Enter 'SHOW' to see your current list.
 """)
 
 while True:
