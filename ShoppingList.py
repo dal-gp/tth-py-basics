@@ -5,6 +5,10 @@
 # be able to quit
 # print out the list
 
+# TODO
+# have a HELP command
+# have a SHOW command
+# clean code in general
 
 # make a list
 shopping_list = []
