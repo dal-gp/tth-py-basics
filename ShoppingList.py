@@ -10,16 +10,21 @@
 # have a SHOW command
 # clean code up in general
 
-# make a list
-shopping_list = []
 
-# print instruction
-print("What should we pick up at the store?")
-print("""
+def show_help():
+    # print out instruction
+    print("What should we pick up at the store?")
+    print("""
 Enter 'DONE' to stop adding items.
 Enter 'HELP' for this help.
 Enter 'SHOW' to see your current list.
 """)
+
+
+# make a list
+shopping_list = []
+
+show_help()
 
 while True:
     # ask for new item
@@ -28,6 +33,9 @@ while True:
     # be able to quit the app
     if new_item == 'DONE':
         break
+    if new_item == 'HELP':
+        show_help()
+        continue
 
     # add the new item to our shopping list
     shopping_list.append(new_item)
