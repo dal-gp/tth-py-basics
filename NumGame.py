@@ -1,3 +1,9 @@
+# TODO
+# Limit the number of guesses
+# Catch when someone submits a non-integer
+# Print "too low" or "too high msgs for bad gueses
+# Let people play again
+
 import random
 
 # generate a random number between 1 and 10
