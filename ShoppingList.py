@@ -1,3 +1,4 @@
+# v1
 # make a list to hold onto our items
 # print out instructions on how to use the app
 # ask for a new items to our list
