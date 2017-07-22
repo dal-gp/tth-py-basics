@@ -21,6 +21,13 @@ Enter 'SHOW' to see your current list.
 """)
 
 
+def show_list():
+    # print out the list
+    print("Here is your list: ")
+    for item in shopping_list:
+        print(item)
+
+
 # make a list
 shopping_list = []
 
@@ -31,16 +38,16 @@ while True:
     new_item = input("> ")
 
     # be able to quit the app
-    if new_item == 'DONE':
+    if new_item.upper() == 'DONE':
         break
-    if new_item == 'HELP':
+    if new_item.upper() == 'HELP':
         show_help()
+        continue
+    if new_item.upper() == 'SHOW':
+        show_list()
         continue
 
     # add the new item to our shopping list
     shopping_list.append(new_item)
 
-# print out the list
-print("Here is your list: ")
-for item in shopping_list:
-    print(item)
+show_list()
