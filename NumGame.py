@@ -11,8 +11,9 @@ def game():
     # generate a random number between 1 and 10
 
     secret_num = random.randint(1, 10)
+    guesses = []
 
-    while True:
+    while len(guesses) < 5:
         guess = 0
         try:
             # get a number guess from the player
@@ -26,6 +27,8 @@ def game():
                 break
             else:
                 print("That's not it!")
-
+            guesses.append(guess)
+    else:
+        print("You didnot get it! My number was {}".format(secret_num))
 
 game()
