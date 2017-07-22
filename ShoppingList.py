@@ -28,6 +28,12 @@ def show_list():
         print(item)
 
 
+def add_to_list(new_item):
+    # add the new item to our shopping list
+    shopping_list.append(new_item)
+    print("Added {}. List now has {} items".format(new_item, len(shopping_list)))
+
+
 # make a list
 shopping_list = []
 
@@ -46,8 +52,7 @@ while True:
     if new_item.upper() == 'SHOW':
         show_list()
         continue
+    add_to_list(new_item)
 
-    # add the new item to our shopping list
-    shopping_list.append(new_item)
 
 show_list()
