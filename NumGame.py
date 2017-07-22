@@ -35,4 +35,10 @@ def game():
         # and when break and exceptions does not happen
         print("You did not get it! My number was {}".format(secret_num))
 
+    play_again = input("Do you want to play again? ")
+    if play_again != 'n':
+        game()
+    else:
+        print("BYE!")
+
 game()
